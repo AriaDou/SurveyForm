@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="./style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+
+  <div id="main">
+    <p id="description">Let us know how we can improve freeCodeCamp</p>
+
+    <form id="survey-form">
+
+      <div class="section">
+        <label id="name-label" for="name" class="question">* Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required/>
+      </div>
+
+      <div class="section">
+        <label id="email-label" for="email" class="question">* Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your Email" required/>
+      </div>
+
+      <div class="section">
+        <label id="number-label" for="number" class="question">* Age:</label>
+        <input type="number" id="number" min="1" max="125" name="number" placeholder="Age" required/>
+      </div>
+
+      <div class="section">
+        <label class="question">Which option best describes your current role?</label>
+        <select id="dropdown" name="role">
+          <option value="student" selected>Student</option>
+          <option value="full-time-job">Full time job</option>
+          <option value="full-time-learner">Full time learner</option>
+          <option value="prefer-not-to-say">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="section">
+        <label class="question">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+        <div class="option-group">
+          <label>
+            <input type="radio" name="how-likely" value="definitely" required/>Definitely
+          </label>
+          <label>
+            <input type="radio" name="how-likely" value="maybe"/>Maybe
+          </label>
+          <label>
+            <input type="radio" name="how-likely" value="not-sure"/>Not sure
+          </label>
+        </div>
+      </div>
+
+      <div class="section">
+        <label class="question">What do you like most in FCC:</label>
+        <select id="like-most" name="like-most">
+          <option value="" disabled selected>Select an option</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="open-source">Open Source</option>
+        </select>
+      </div>
+
+      <div class="section">
+        <label class="question">
+          Things that should be improved in the future (Check all that apply):
+        </label>
+        <div class="option-group">
+          <label>
+            <input type="checkbox" name="improved" value="0"/>Front-end Projects
+          </label>
+          <label>
+            <input type="checkbox" name="improved" value="1"/>Back-end Projects
+          </label>
+          <label>
+            <input type="checkbox" name="improved" value="2"/>Data Visualization
+          </label>
+          <label>
+            <input type="checkbox" name="improved" value="3"/>Challenges
+          </label>
+          <label>
+            <input type="checkbox" name="improved" value="4"/>Open Source Community
+          </label>
+          <label>
+            <input type="checkbox" name="improved" value="5"/>Gitter help rooms
+          </label>
+          <label>
+            <input type="checkbox" name="improved" value="6"/>Videos
+          </label>
+          <label>
+            <input type="checkbox" name="improved" value="7"/>City Meetups
+          </label>
+          <label>
+            <input type="checkbox" name="improved" value="8"/>Wiki
+          </label>
+          <label>
+            <input type="checkbox" name="improved" value="9"/>Forum
+          </label>
+          <label>
+            <input type="checkbox" name="improved" value="10"/>Additional Courses
+          </label>
+        </div>
+      </div>
+
+      <div class="section">
+        <label class="question">Any Comments or Suggestions?</label>
+        <textarea placeholder="Enter your comment here..." rows="3"></textarea>
+      </div>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </main>
+</body>
+
+</html>
