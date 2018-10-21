@@ -3,6 +3,7 @@
 
 <head>
   <link href="./style.css" type="text/css" rel="stylesheet">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
 </head>
 
 <body>
@@ -15,22 +16,29 @@
 
       <div class="section">
         <label id="name-label" for="name" class="question">* Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required/>
+        <div class="answer">
+          <input type="text" id="name" class="input-field" name="name" placeholder="Enter your name" required/>
+        </div>
       </div>
 
       <div class="section">
         <label id="email-label" for="email" class="question">* Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your Email" required/>
+        <div class="answer">
+          <input type="email" id="email" class="input-field" name="email" placeholder="Enter your Email" required/>
+        </div>
       </div>
 
       <div class="section">
         <label id="number-label" for="number" class="question">* Age:</label>
-        <input type="number" id="number" min="1" max="125" name="number" placeholder="Age" required/>
+        <div class="answer">
+          <input type="number" id="number" class="input-field" min="1" max="125" name="number" placeholder="Age" required/>
+        </div>
       </div>
 
       <div class="section">
         <label class="question">Which option best describes your current role?</label>
-        <select id="dropdown" name="role">
+        <div class="answer">
+          <select id="dropdown" name="role">
           <option value="student" selected>Student</option>
           <option value="full-time-job">Full time job</option>
           <option value="full-time-learner">Full time learner</option>
@@ -38,10 +46,11 @@
           <option value="other">Other</option>
         </select>
       </div>
+      </div>
 
       <div class="section">
         <label class="question">* How likely is that you would recommend freeCodeCamp to a friend?</label>
-        <div class="option-group">
+        <div class="answer option-group">
           <label>
             <input type="radio" name="how-likely" value="definitely" required/>Definitely
           </label>
@@ -56,7 +65,8 @@
 
       <div class="section">
         <label class="question">What do you like most in FCC:</label>
-        <select id="like-most" name="like-most">
+        <div class="answer">
+          <select id="like-most" name="like-most">
           <option value="" disabled selected>Select an option</option>
           <option value="challenges">Challenges</option>
           <option value="projects">Projects</option>
@@ -64,12 +74,13 @@
           <option value="open-source">Open Source</option>
         </select>
       </div>
+      </div>
 
       <div class="section">
         <label class="question">
           Things that should be improved in the future (Check all that apply):
         </label>
-        <div class="option-group">
+        <div class="answer option-group">
           <label>
             <input type="checkbox" name="improved" value="0"/>Front-end Projects
           </label>
@@ -108,7 +119,9 @@
 
       <div class="section">
         <label class="question">Any Comments or Suggestions?</label>
-        <textarea placeholder="Enter your comment here..." rows="3"></textarea>
+        <div class="answer">
+          <textarea placeholder="Enter your comment here..." rows="3"></textarea>
+        </div>
       </div>
 
       <button type="submit" id="submit">Submit</button>

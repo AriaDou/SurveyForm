@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+  <link href="./style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <div id="paper">
+    <p id="description">Let us know how we can improve freeCodeCamp</p>
+    <form id="survey-form" action="#">
+
+      <div class="row">
+        <div class="leftCol">
+          <label id="name-label" for="name">
+            * Name:
+          </label>
+        </div>
+        <div class="rightCol">
+          <input id="name" class="input-field" type="text" name="name" placeholder="Enter your name" required/>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="leftCol">
+          <label id="email-label" for="email">
+            * Email:
+          </label>
+        </div>
+        <div class="rightCol">
+          <input id="email" class="input-field" type="email" name="email" placeholder="Enter your Email" required/>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="leftCol">
+          <label id="number-label" for="number">
+            * Age:
+          </label>
+        </div>
+        <div class="rightCol">
+          <input id="number" class="input-field" type="number" name="age" placeholder="Age"
+          min="1" max="125" required/>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="leftCol">
+          <label id="dropdown-label" for="dropdown">
+            Which option best describes your current role?
+          </label>
+        </div>
+        <div class="rightCol">
+          <select id="dropdown" class="dropdown" name="role">
+            <option disabled value="" selected>Select an option</option>
+            <option value="student">Student</option>
+            <option value="fullJob">Full Time Job</option>
+            <option value="fullLearner">Full Time Learner</option>
+            <option value="notSay">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="leftCol">
+          <label id="recommend-label">
+            * How likely is that you would recommend freeCodeCamp to a friend?
+          </label>
+        </div>
+        <div class="rightCol">
+          <label class="tip">
+            <input type="radio" name="recommend" value="definitely" required/>
+            Definitely
+          </label>
+          <label class="tip">
+            <input type="radio" name="recommend" value="maybe"/>
+            Maybe
+          </label>
+          <label class="tip">
+            <input type="radio" name="recommend" value="notSure"/>
+            Not sure
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="leftCol">
+          <label id="like-label" for="like">
+            What do you like most in FCC:
+          </label>
+        </div>
+        <div class="rightCol">
+          <select id="like" class="dropdown" name="like">
+            <option disabled value="" selected>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Communityr</option>
+            <option value="openSource">Open Source</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="leftCol">
+          <label id="improved-label">
+            Things that should be improved in the future</br>(Check all that apply):
+          </label>
+        </div>
+        <div class="rightCol">
+          <label class="tip">
+            <input type="checkbox" name="improved" value="front-end"/>
+            Front-end Projects
+          </label>
+          <label class="tip">
+            <input type="checkbox" name="improved" value="back-end"/>
+            Back-end Projects
+          </label>
+          <label class="tip">
+            <input type="checkbox" name="improved" value="data"/>
+            Data Visualization
+          </label>
+          <label class="tip">
+            <input type="checkbox" name="improved" value="challenges"/>
+            Challenges
+          </label>
+          <label class="tip">
+            <input type="checkbox" name="improved" value="community"/>
+            Open Source Community
+          </label>
+          <label class="tip">
+            <input type="checkbox" name="improved" value="rooms"/>
+            Gitter help rooms
+          </label>
+          <label class="tip">
+            <input type="checkbox" name="improved" value="videos"/>
+            Videos
+          </label>
+          <label class="tip">
+            <input type="checkbox" name="improved" value="meetups"/>
+            City Meetups
+          </label>
+          <label class="tip">
+            <input type="checkbox" name="improved" value="wiki"/>
+            Wiki
+          </label>
+          <label class="tip">
+            <input type="checkbox" name="improved" value="forum"/>
+            Forum
+          </label>
+          <label class="tip">
+            <input type="checkbox" name="improved" value="add-courses"/>
+            Additional Courses
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="leftCol">
+          <label id="suggestion-label" for="suggestion">
+            Any Comments or Suggestions?
+          </label>
+        </div>
+        <div class="rightCol">
+          <textarea id="suggestion" class="input-field" name="suggestion"
+          placeholder="Enter your comment here..."/></textarea>
+        </div>
+      </div>
+
+      <button id="submit" type="submit">Submit</button>
+
+    </form>
+  </div>
+</body>
+
+</html>

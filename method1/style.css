@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
 body {
   background-color: #a9d7d1;
   font-family: 'Raleway', Helvetica, sans-serif;
@@ -17,27 +19,51 @@ body {
   margin: 20px auto;
 }
 
-form {
-  display: grid;
-  grid-auto-rows: minmax(28px, auto);
-  grid-row-gap: 20px;
-  justify-items: center;
+.section {
+  margin: 10px auto;
+  display: flex;
+  align-items: flex-start;
 }
 
 .question {
   text-align: right;
+  padding-right: 20px;
+  margin: 10px auto;
+  width: 50%;
 }
 
-.section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 20px;
+.answer {
+  width: 50%;
+  text-align: left;
+  margin: 10px auto;
+}
+
+
+@media screen and (max-width: 480px) {
+  .section {
+    display: block;
+  }
+
+  .question {
+    width: 100%;
+    text-align: left;
+    float: left;
+  }
+
+  .answer {
+    width: 100%;
+  }
 }
 
 .option-group {
   display: grid;
   grid-row-gap: 8px;
   text-align: left;
+}
+
+.input-field,
+select {
+  width: 90%;
 }
 
 button {
